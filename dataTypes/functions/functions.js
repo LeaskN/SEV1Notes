@@ -164,4 +164,104 @@
             // }
             // funkOne();
 
-            
+// function test(){
+//     //STUFF HAPPENING HERE
+//     return // value here 
+// }  
+
+// function test2(){
+
+//     if( 1 > 0 ){
+
+//         return // value here 
+//     } else {
+        
+//         return // value here 
+//     }
+// }
+
+// function noSpace(x){
+//     return x.split(' ').join('');
+// }
+
+// var str1 = '8 j 8   mBliB8g  imjB8B8  jl  B';
+// console.log(noSpace(str1));
+
+// function basicOp(operation, value1, value2){
+//     if(operation == '+'){
+//       return value1 + value2;
+//     } else if(operation == '-'){
+//       return value1 - value2;
+//     } else if(operation == '*'){
+//       return value1 * value2;
+//     } else if(operation == '/'){
+//       return value1 / value2;
+//     } else if(operation == '^'){
+//         return Math.pow(value1, value2);
+//     } else {
+//       return 'not a valid mathematical operation';
+//     }
+// }
+
+// function basicOp(operation, value1, value2){
+//     if( operation === '+' ){
+//         return value1 + value2;
+//     } else if( operation === '-' ){
+//         return value1 - value2;
+//     } else if( operation === '*'){
+//         return value1 * value2;
+//     } else if( operation === '/'){
+//         return value1 / value2;
+//     }
+// }
+
+
+// console.log(basicOp('-', 4, 6));
+// console.log(basicOp('+', 4, 6));
+// console.log(basicOp('*', 4, 6));
+// console.log(basicOp('/', 4, 6));
+
+
+// function squareSum(numbers){
+//     var sum = 0;
+//     for( var i = 0; i < numbers.length; i++){
+//         sum += (numbers[i] * numbers[i]);
+//     }
+//     return sum;
+// }
+
+// console.log(squareSum([4, 2 , 1, 10]))
+
+// function findNeedle(haystack) {
+//     return 'found needle at position ' + haystack.indexOf('needle');
+// }
+// function findNeedle(haystack) {
+//     for(var i = 0; i < haystack.length; i++){
+//         if(haystack[i] === 'needle'){
+//             return 'found needle at position ' + i;
+//         }
+//     }
+// }
+
+// var haystack_3 = [1,2,3,4,5,6,7,8,8,7,5,4,3,4,5,6,67,5,5,3,3,4,2,34,234,23,4,234,324,324,'needle',1,2,3,4,5,5,6,5,4,32,3,45,54];
+
+// console.log(findNeedle(haystack_3));
+
+
+// Example:
+
+    // ONLY using comments write a function that turns an array into a string
+
+    // Q1 Solution:
+
+        // Declare a function that takes in an array 
+        // The function will join the array into one long string using spaces 
+
+// Q1: 
+    // Only using comments write a function that gets the first item in an array
+
+// Q2: 
+    // Given a string remove every other letter 
+
+// Q3:
+    // Given a number minus 5 from it and divide it by 10
