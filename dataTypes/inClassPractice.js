@@ -1,5 +1,5 @@
 // Basic Accumiator Pattern
-
+// Question 1
 // Using a loop count every time we iterate over the loop
 
     // declare a function, that takes in a number, giving it a name, and value
@@ -16,7 +16,7 @@
     // }
     // console.log(loopCounter(1000));
 
-//Example 2:
+//Question 2:
 // Create a function that takes in a array and counts every item in the array
 
 var fruits = ['apple','banana','orange','pineapple','kiwi', 'pear'];
@@ -37,12 +37,21 @@ var newFruits = ['lime', 'lemon'];
         console.log(arrayFruits(fruits));
         console.log(arrayFruits(newFruits));
         
+// Question 3:
+// Given an arry of of first & last names (see below), write a function that returns an array of first names
+        // Example array: ['Patrick Francois', 'Mitsie Paisley', 'George Francais', 'Deboraht Neal']
+            // Resulting output: ['Patrick', 'Mitsie', 'George', 'Deboraht']
+
+            //Hints: 
+                // 1: use an array instead of a number for our accumilator
+                // 2: within the loop use the .push() method to add items into the array 
 
 
-
-
+// Question 4
 // Given an array of strings write a function that returns any items that are longer than 4 letters
-// Example array: var words = ['Hello', 'World', 'Pasta', Pizza', 'Dog', 'Cat', 'Fish', 'Jump']
+    // Example array: var words = ['Hello', 'World', 'Pasta', Pizza', 'Dog', 'Cat', 'Fish', 'Jump']
 
+
+// Question 5
 // Given a string write a function that removes every other letter
 
