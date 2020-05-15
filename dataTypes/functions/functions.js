@@ -1,5 +1,5 @@
 // Functions
-    // A function is a block of code designed for a specific task
+    // A reusable block of code designed for a specific task
     // Functions are usually invoked more than once 
         // Note:
             // The proper way of saying 'used' is 'invoked'

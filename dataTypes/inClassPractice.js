@@ -38,7 +38,7 @@ var newFruits = ['lime', 'lemon'];
         console.log(arrayFruits(newFruits));
         
 // Question 3:
-// Given an arry of of first & last names (see below), write a function that returns an array of first names
+// Given an array of of first & last names (see below), write a function that returns an array of first names
         // Example array: ['Patrick Francois', 'Mitsie Paisley', 'George Francais', 'Deboraht Neal']
             // Resulting output: ['Patrick', 'Mitsie', 'George', 'Deboraht']
 

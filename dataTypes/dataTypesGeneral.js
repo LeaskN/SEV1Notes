@@ -72,3 +72,64 @@
 //          - typeof Symbol equals function
 
 // console.log(typeof obj); 
+
+// Parameter explanation:
+    // var user = 'Mike';
+    // function greetUser(parameter){
+    //     return `Hi ${parameter}, welcome to the website!`
+    // }
+    // console.log(greetUser(user));
+
+// commenting 
+    // Define the next line's code 
+        // The purpose of this is to think out a solution PRIOR to actually writing any code
+// syntax
+    // the set of rules we have to adhear to within JavaScript
+    // Each specific thing has its own specific syntax
+        // Function syntax:
+            // function funkName(parameter){}
+        // Loop Syntax:
+            // for(var i = 0; i < number; i++){}
+        // Methods
+            // join
+                // only for arrays
+                // arr.join('-') // <- we get to choose what goes where the dash is
+            // split
+                // Only for strings
+                // str.split('-') // <- we get to choose what goes where the dash is 
+            // splice
+                // Only for arrays 
+                    // arr.splice(i, n, element)
+                        // where i is the index that we want our element to be
+                        // n is the number of items that will be removed
+                        // and element is the item being added 
+
+                    // Example:
+                        // var greetings = ['Hello', 'Howdy'];
+                        // greetings.splice(1, 0, "Hi", "Hola");
+                        // console.log(greetings)
+            // Math
+                // Math.floor(9.99)
+                // Math.ceil(9.01)
+                // Math.round(9.5)
+// functions
+    // Definition: a reusable block of code that performs a specific task 
+
+// for loops
+    // Definition: A loop iterates over items and executes code for each item.
+        // Important features: 
+            // it has a starting point, max value, and incrimentation amount.
+    // basic accumilator pattern
+        // when a loop is adding value to an existing variable 
+            // This can be an array, string, number, object, etc..
+// ++
+    // increase by 1
+// --
+    // decrease by 1 
+// how to name variables apropriately
+    // helps us and others re-read our exisiting code
+// console.log & testing code 
+    // console.log doesn't manipulate our code in any way
+    // It JUST posts it to our console for our viewing
+// Math.
+    // See previous Math description. 
