@@ -269,3 +269,248 @@
 //     };
 // }
 // console.log(finalStr);
+
+// Primative Data Types
+        // All immutable, (re-assign the variable if you'd like to change it)
+            // Example:
+                // var str1 = 'Test'
+                // str1 = str1.slice(1,3);
+                // console.log(str1);
+    // String
+        // Characters surrounded by a set of quotes, either '', "", or ``
+    // Boolean
+        // True or False values. Can be called Truthy or Falsy. All data types hold boolean values. 
+    // Undefined
+        // Something has been defined but hasn't been assigned a value.
+        // var thing; 
+    // Null
+        // An empty value. Signifies the lack of anything.
+        // var thing1 = null;
+    // Number
+        // Numbers are comprised of digits. JavaScript can perform mathematical operations on them. 
+
+    // Symbol
+        // Used for creating unique identifiers.
+
+// Complex Data Types 
+    // Arrays
+        // A list of items surrounded in square brackets. 
+    // Objects
+        // An unordered collection of key-value pairs.
+            // Internet:
+                // An unordered collection of related data in the form of “key: value” pairs. 
+        // var obj1 = {
+        //     team: {
+        //         player1: {
+        //             attributes: {
+        //                 hair: 'brown',
+        //                 eyes: 'brown',
+        //                 height: '150cm'
+        //             }
+        //         },
+        //         player2: {
+        //             attributes: {
+        //                 hair: 'brown',
+        //                 eyes: 'brown',
+        //                 height: '150cm'
+        //             }
+        //         },
+        //         player3: {
+        //             attributes: {
+        //                 hair: 'brown',
+        //                 eyes: 'brown',
+        //                 height: '150cm'
+        //             }
+        //         }
+        //     }
+        // }
+        // console.log(obj1.team.player.attributes.hair)
+    // Functions
+        // A block of code designed to performa a particular task. 
+            // Syntax:  
+                // keyword, function name, parameter
+                // function firstPersonsName(names){
+                //     firstPerson = names[0];
+                //     // return ensures the function evaluates to a value. 
+                //     return firstPerson;
+                // }
+                // // define our variable which will be utilized as an argument
+                // // the argument takes place of all occurences of the parameter
+                // var people = [ 'Debbie', 'Geo' ];
+                // //      calling the function, and invoking it with the people array.
+                // console.log(firstPersonsName(people));
+                // // ^ logging it to the terminal
+                // var arg = "I am arguing"
+
+                // function test(parameter){
+
+                //     return "Welcome to Facebook!";
+                // }
+
+                // console.log(test(arg));
+// Bracket Notation:
+    // Getting specific characters from a string or
+    // Getting specific elements from an array
+    // Examples:
+        // String:    
+            // 'Hello-World'[0] // --> 'H'
+        // Array
+            // ['Hello', 'World'][0] // --> 'Hello'
+        // Common example is to get something based on its length
+            // 'Hello-World'[('Hello-World'.length -1)]// --> 'd' (which is the last letter)
+            // ['Hello', 'World'][(['Hello', 'World'].length -1)] --> 'World' (the last element)
+            // 'Hello-World'[('Hello-World'.length - 4)] // --> o
+// Methods:
+
+    // String:
+        // Length
+            // gives us how many characters are in the string
+            // Syntax:
+                // str.length
+        // Slice
+            // gives us specific characters inbetween two indicies. Inclusive at the start and exlusive at the end. 
+            // Syntax:
+                // ('Hello-World').slice(0,2); // --> 'He'
+        // Split
+            // Turns a string into an array cut on a given character. 
+            // Syntax:
+                // ('Hello-World').split('-') // --> ['Hello', 'World']
+        // Replace
+            // Replaces the first occurrence a character with another character.
+            // Syntax:
+                // ('Hello-World').replace('-', ' ') // --> 'Hello World'
+                // ('Hello-World').replace('l', ' ') // --> 'He lo-World'
+        // IndexOf
+            // Gives you the specific location of a character.
+            // Syntax
+                // ('Hello-World').indexOf('o'); // --> 4;
+        
+    // Arrays:
+        // length
+            // gives us how many elements are in the array
+            // Syntax:
+                // arr.length
+        // push
+            // Adds an element to the end of an array
+            // Syntax:
+                // var arr = ['Hello', 'World']
+                // arr.push('Goodmorning')
+                // console.log(arr); // --> ['Hello', 'World', 'Goodmorning']
+        // unshift
+            // Adds an element to the beginning of an array.
+            // Syntax
+                // var arr1 = ['Hello', 'World']
+                // arr1.unshift('Great')
+                // console.log(arr1); // --> ['Great', 'Hello', 'World']
+        // shift
+            // Removes the first element from an array.
+            // Syntax
+                // var arr2 = ['Hello', 'World']
+                // arr2.shift()
+                // console.log(arr2) // --> ['World']
+        // pop
+            // Deletes the last element from an array.
+            // Syntax
+                // var arr3 = ['Hello', 'World']
+                // arr3.pop()
+                // console.log(arr3) // --> ['Hello']
+        // Splice
+            // Adds and removes elements.
+                // Syntax
+                    // var arr = ["Hello", "World"];
+                    // arr.splice(0,0,'Greetings', 'Hi');
+                    // console.log(arr);
+        // join
+            // Converts an array into a string by concatenating all elements together on a given character.
+            // Syntax
+                // var arr4 = ['Hello', 'World'];
+                // var stringFromArr4 = arr4.join('-');
+                // console.log(stringFromArr4);
+        
+
+// loops
+    // Definition:
+        // Repeatedly executes a block of code until a certain condition is met.
+    // Syntax:
+        // for (var index = 0; index < number; index++){}
+        // Inside a function
+            // function doALoop(parameter){
+                // for (var index = 0; index < number; index++){
+
+                // }
+                // return 
+            // }
+    // basic accumilator pattern
+        // definition:
+            // A commonly occuring block of code which has a variable outside a loop that we are modifying from inside a loop. 
+                // Remember the warehouse/forklift example.
+            // Syntax:
+                // Number:
+                    // var highest = 10;
+                    // function countEvenSum (numParam){
+                    //     var accumilator1 = 0;
+
+                    //     for(var i = 0; i < numParam; i++){
+                    //         if(i % 2 === 0 ){
+                    //             accumilator1 = accumilator1 + i; // accumilator1 += i
+                    //         } 
+                    //     }
+
+                    //     return accumilator1;
+                    // }
+                    // console.log(countEvenSum(highest));
+                // Array:
+                    // var names = ['Debbie Neal', 'Nat Martinez', 'Solomon West'];
+
+                    // function lastNames(arrParam){
+                    //     var allLasts = [];
+
+                    //     for(var i = 0; i < arrParam.length; i++){
+                    //         var fullName = arrParam[i];
+                    //         var space = fullName.indexOf(' ');
+                    //         var last = fullName.slice(space + 1, fullName.length);
+                    //         allLasts.push(last);
+                    //     }
+                    //     return allLasts;
+                    // }
+                    // console.log(lastNames(names));
+                // String:
+                    // every time we have the letter e our count will increase
+                    // var sentence = 'The quick brown fox jumps over the lazy dog.';
+
+                    // function allEs(strParam){
+                    //     var numberOfEs = 0;
+
+                    //     for(var i = 0; i < strParam.length; i++){
+                    //         var letter = strParam[i];
+
+                    //         if ( letter === 'e' || letter === 'E' ){
+                    //             numberOfEs++;
+                    //         } else {
+
+                    //         }
+                    //     }
+                    //     return numberOfEs;
+                    // }
+                    // console.log(allEs(sentence));
+
+                    // function allVowels(strParam){
+                    //     var numberOfEs = 0;
+
+                    //     for(var i = 0; i < strParam.length; i++){
+                    //         var letter = strParam[i];
+
+                    //         if ( letter === 'e' || letter === 'E' ||
+                    //              letter === 'a' || letter === 'A' ||
+                    //              letter === 'i' || letter === 'I' ||
+                    //              letter === 'o' || letter === 'O' ||
+                    //              letter === 'u' || letter === 'U'
+                    //         ){
+                    //             numberOfEs++;
+                    //         } else {
+
+                    //         }
+                    //     }
+                    //     return numberOfEs;
+                    // }
+                    // console.log(allVowels(sentence));
