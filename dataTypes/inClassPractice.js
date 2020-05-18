@@ -19,23 +19,23 @@
 //Question 2:
 // Create a function that takes in a array and counts every item in the array
 
-var fruits = ['apple','banana','orange','pineapple','kiwi', 'pear'];
-var newFruits = ['lime', 'lemon'];
-    // declare a function that takes in any array
-        function arrayFruits(foods){
-            // declare a variable called totalFruits
-            var totalFruits = 0;
-            // declare a for loop -> starting at the zero index go the length of the entire array and increase by 1
-            for (var i = 0; i < foods.length; i++){
-                // add one to the total count  
-                totalFruits = totalFruits + 1;
-            }
-            // return totalFruits
-            return totalFruits;
-        }
+// var fruits = ['apple','banana','orange','pineapple','kiwi', 'pear'];
+// var newFruits = ['lime', 'lemon'];
+//     // declare a function that takes in any array
+//         function arrayFruits(foods){
+//             // declare a variable called totalFruits
+//             var totalFruits = 0;
+//             // declare a for loop -> starting at the zero index go the length of the entire array and increase by 1
+//             for (var i = 0; i < foods.length; i++){
+//                 // add one to the total count  
+//                 totalFruits = totalFruits + 1;
+//             }
+//             // return totalFruits
+//             return totalFruits;
+//         }
 
-        console.log(arrayFruits(fruits));
-        console.log(arrayFruits(newFruits));
+//         console.log(arrayFruits(fruits));
+//         console.log(arrayFruits(newFruits));
         
 // Question 3:
 // Given an array of of first & last names (see below), write a function that returns an array of first names
