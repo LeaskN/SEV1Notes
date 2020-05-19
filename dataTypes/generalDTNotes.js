@@ -150,7 +150,7 @@
 //      A set of characters surrounded by quotes " ", ' ', ` `
 //      String are immutable, which means they cannot be changed.
 //      Use variables to create new strings 
-//      Backticks (template literals) vs Single or Double Quotes:
+    //  Backticks (template literals) vs Single or Double Quotes:
 //          - You can include JavaScript within backticks by using ${}, which is called interpolation
 //          - Backticks are very literal, until you close them out everything (included new lines will be included)
 //          - Backticks are very literal, they inlucde new line characters
