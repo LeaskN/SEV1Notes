@@ -326,7 +326,7 @@
         // }
         // console.log(obj1.team.player.attributes.hair)
     // Functions
-        // A block of code designed to performa a particular task. 
+        // A re-usable block of code designed to perform a particular task. 
             // Syntax:  
                 // keyword, function name, parameter
                 // function firstPersonsName(names){
