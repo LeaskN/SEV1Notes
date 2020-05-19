@@ -2,9 +2,17 @@
 // console.log() is used to print (AKA log) information to the Command Line Interface (CLI)
 //     console.log("Hello World, I've updated this file!")  
     
-// A variable is a symbol that stands for another value
-// var x = 2;`
-// console.log(1+x);
+// Variables are containers that you can store values in
+    // For example:
+        // var x = 2;
+        // console.log(1+x);
+    // We can declare variables using var, let, or const. 
+        // var is function scoped
+        // let is block scoped
+        // const is block scoped
+            // const cannot be updated or re-declared
+            // const hello = "hello World"
+            // hello = "Hello World" // --> this throws an error 
 
 // JavaScript Data types
 
