@@ -9,7 +9,7 @@
         // Syntax [1, 2, 3].push(4) // --> [1, 2, 3, 4]
 
     // indexOf
-
+        
     // slice
 
     // length

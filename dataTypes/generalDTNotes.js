@@ -5,14 +5,100 @@
 // Variables are containers that you can store values in
     // For example:
         // var x = 2;
-        // console.log(1+x);
+        // let y = 4;
+        // const z = 6;
     // We can declare variables using var, let, or const. 
         // var is function scoped
         // let is block scoped
-        // const is block scoped
+        // const is block scoped but cannot be updated
             // const cannot be updated or re-declared
             // const hello = "hello World"
             // hello = "Hello World" // --> this throws an error 
+
+        // The reason that let and const have been created is because of some confusing situations regarding var and {}
+            // Block Scope:
+                // different for var and let
+
+                // var thing1 = "Hello World";
+                // if (3 > 0){
+                //     var thing1 = "Howdy World"; // most people expect this to be confined to curly brackets
+                // }
+                // // console.log(thing1); // --> Howdy World, confusingly getting the value from inside the brackets
+                
+                // let thing2 = "Hello World";
+                // if (3 > 0){
+                //     let thing2 = "Howdy World";
+                //     // console.log(thing2);
+                // }
+                // console.log(thing2); // --> Hello World, not getting the value from inside the brackets
+                
+                // const thing3 = "Hello World";
+                // if (3 > 0){
+                //     const thing3 = "Howdy World"; // --> Error: const variables cannot be re-assigned
+                //     console.log(thing3); 
+                // }
+                // console.log(thing3); 
+
+                // function scope
+                    // the same for both var and let
+
+                    // var thing4 = "Hello World";
+                    // function varOnInside(){
+                    //     var thing4 = 'Howdy World';
+                    //     console.log(thing4); //  Howdy World as that is how thing4 was defined on the previous line
+                    //     return thing4;
+                    // }
+                    // console.log(thing4); // Thing4 is still defined as "Hello World" due to the function scope
+
+                    // let thing5 = "Hello World";
+                    // function letOnInside(){
+                    //     let thing5 = 'Howdy World';
+                    //     console.log(thing5); //  Howdy World as that is how thing5 was defined on the previous line
+                    //     return thing5;
+                    // }
+                    // console.log(thing5); // Thing5 is still defined as "Hello World" due to the function scope
+    // We can give variables value using var, let, const, or without the pervious three options
+        // var a = 1;
+        // let b = 2;
+        // const c = 3;
+        // d = 4; // Global scope, but bad practice if the variable hasn't previously been defined
+            // Example
+                // Good practice:
+                    // let a = 10;
+                    // a = 20; // this is usually done inside of a function or after recieving new data
+                        // Example:
+                //             let t = 7;
+
+                //             function changeT(){
+                //                 t = 11;
+                //                 return t;
+                //             }
+                //             changeT();
+                //             console.log(t);
+                // // bad practice
+                //     b = 15; // when declaring variables we want to initialize them with let or var (if they are going to change)
+                //     b = 20;
+
+                // Hoisting
+                    // A mechanism where variables and function declarations are moved to the top of their scope before code execution.
+                    // Specifics:
+                        // var: var variables are hoisted, we can log variables declared with var prior to their declaration and we will recieve undefined as a result
+                        // let: let variables are hoisted, although the variables are not immediately assigned any value and will give us an error
+                        // functions: Functions are hoisted with full value to the beginning of a document
+                            let thing = 1;
+                            for(let i = 0; i < 10; i++){
+                                let thing = "Hello World"
+                            }
+                            console.log(i);
+                    // Example:    
+                        // not defined:
+                            // console.log(test); // --> Error: not defined
+                        // full value:
+                            // console.log(testfunk1()); --> hi
+                            // function testfunk1(){ return 'hi' }
+                        // no value: (but still hoisted)
+                            // console.log( testVariable1 ); // error, testVariable1 is not defined. 
+                            // let testVariable1 = 'Hello World'; 
 
 // JavaScript Data types
 
@@ -379,6 +465,7 @@
             // gives us specific characters inbetween two indicies. Inclusive at the start and exlusive at the end. 
             // Syntax:
                 // ('Hello-World').slice(0,2); // --> 'He'
+                // console.log('hello world'.slice(0,2));
         // Split
             // Turns a string into an array cut on a given character. 
             // Syntax:
@@ -389,7 +476,7 @@
                 // ('Hello-World').replace('-', ' ') // --> 'Hello World'
                 // ('Hello-World').replace('l', ' ') // --> 'He lo-World'
         // IndexOf
-            // Gives you the specific location of a character.
+            // Gives you the specific location of an element.
             // Syntax
                 // ('Hello-World').indexOf('o'); // --> 4;
         
