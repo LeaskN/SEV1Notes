@@ -442,6 +442,85 @@
                 // }
 
                 // console.log(test(arg));
+    // Dynamic Solutions or Dynamic Code
+        // A dynamic solution is one that is built to handle all scenarios, not just the one at hand. 
+            // For example:
+                // find the middle letter of a string   
+                    // should return the middle letter of ANY string not just one string, no matter the length
+                // find the last element of an array
+                    // should return the last letter of ANY array not just one array, no matter the length
+            // example of turning static solutions into dynamic solutions
+                // Instructions: write a function that gets the middle character of a string
+                let str1 = "Hug";
+                let str2 = "Higgs";
+                let str3 = "Trench";
+                let str4 = "Prying";
+                let str5 = "Tipping";
+                let str6 = "Hello";
+                let str7 = "World";
+
+                // the following solutions evolve from one to the next to be more dynamic
+
+                // Static solution 1: 
+                    // function middleCharacter(param){
+                    //     return 'u';
+                    // }
+                    // console.log(middleCharacter(str1));
+                    // this solution works for any string with an odd amout of Characters and the middle Character is u.
+
+                // Static solution 2:
+                    // function middleCharacter(param){
+                    //     return str2[1];
+                    // }
+                    // console.log(middleCharacter(str2));
+                    // this solution works for any string with 3 Characters and is contained in the variable str2.
+                
+                // Static solution 3:
+                    // function middleCharacter(param){
+                    //     return param[1];
+                    // }
+                    // console.log(middleCharacter(str1));
+                    // console.log(middleCharacter(str2));
+                    // console.log(middleCharacter(str3));
+                    // console.log(middleCharacter(str4));
+                    // console.log(middleCharacter(str5));
+                    // console.log(middleCharacter(str6));
+                    // console.log(middleCharacter(str7));
+                    // this solution works for any string with 3 or 4 Characters
+                
+                // Dynamic solution 1:
+                    // this will be dynamic, but only by a hair
+                    // function middleCharacter(param){
+                    //     let middleIndex = (Math.floor(param.length/2));
+                    //     return param[middleIndex];
+                    // }
+                    // console.log(middleCharacter(str1));
+                    // console.log(middleCharacter(str2));
+                    // console.log(middleCharacter(str3));
+                    // console.log(middleCharacter(str4));
+                    // console.log(middleCharacter(str5));
+                    // console.log(middleCharacter(str6));
+                    // console.log(middleCharacter(str7));
+                    // // this solution works for any string
+
+                // Dynamic solution 2: (final solution)
+                    // this will be dynamic, but only by a hair
+                    function middleCharacter(param){
+                        if(typeof param === 'string'){
+                            let middleIndex = param.length / 2;
+                            let middleCharacter = param.slice(middleIndex, middleIndex+1);
+                            return middleCharacter;
+                        } else {
+                            return "Unable to find middle character, not a string.";
+                        }
+                    }
+                    console.log(middleCharacter(['Hello', 'World']));
+                    console.log(middleCharacter(str2));
+                    console.log(middleCharacter(str3));
+                    console.log(middleCharacter(str4));
+                    console.log(middleCharacter(str5));
+                    console.log(middleCharacter(str6));
+                    console.log(middleCharacter(str7));
 // Bracket Notation:
     // Getting specific characters from a string or
     // Getting specific elements from an array

@@ -12,7 +12,7 @@
 //              console.log(index) //This will happen 10 times because of the 10 on the previous line.
 //          }
 
-// Shorthand to increase a variable (i) by a specific number
+// Shorthand to increment or decrement a variable (i) by a specific number
                 // longhand
                     // i = i + 1
                 // shorthand:
@@ -186,7 +186,7 @@
         // create a function which logs the last letter of every other element, starting from the back of an array
             // declare a variable
             // give your variable a value of an array
-            let bfastFoods = ['Eggs', 'Potatoes', 'Cereal', 'Apple', 'Coffee', 'Tea', 'Milk'];
+            // let bfastFoods = ['Eggs', 'Potatoes', 'Cereal', 'Apple', 'Coffee', 'Tea', 'Milk'];
 
             // create a function 
             // with a name
@@ -211,25 +211,22 @@
             // lastLetter(bfastFoods);
 
             // Basic accumilator pattern example:
-            // Write a function which iterates over an array and fills a new array with the middle letter of each element
-            //  and fills a new array with the 
-            let cartoons = ['Tom-&-Jerry', 'X-Men', 'Gundam-Wing', 'Hey-Arnold', 'Pokémon', 'Boondoks', 'Happy-Tree-Friends'];
+            // Write a function which iterates over an array and fills a new array with the middle character of each element
 
-            function midEleLet(paramArr){
-                let allMidLet = [];
+            // let cartoons = ['Tom-&-Jerry', 'X-Men', 'Gundam-Wing', 'Hey-Arnold', 'Pokémon', 'Boondoks', 'Happy-Tree-Friends']; // defining a variable seting it equal to an array of strings
+
+            // function midEleLet(paramArr){ // defining a function and allowing it to take one parameter
+            //     let allMidLet = []; // declaring a new variable and setting it equal to an empty array
                 
-                for(let i = 0; i < paramArr.length; i++){
-                    let currentEle = paramArr[i];
-                    //look for middle letter
-                    let middleLetterIndex = currentEle.length/2;
-                    let middleLetter = currentEle.slice(middleLetterIndex, middleLetterIndex+1);
-
-                    allMidLet.push(middleLetter);
-                }
-                return allMidLet;
-            }
-            console.log(midEleLet(cartoons));
-
+            //     for(let i = 0; i < paramArr.length; i++){ // declaring a loop which starts at 0 ends at param.length and increases by 1
+            //         let currentEle = paramArr[i]; // declare a variable and set it equal to our current element based on the current index
+            //         let middleLetterIndex = currentEle.length/2; // declare a variable and dynamically set it equal to the middle letter by dividing it in half
+            //         let middleLetter = currentEle.slice(middleLetterIndex, middleLetterIndex + 1); // declare a variable and set it equal to middle letter by slicing the current element from immediately before the middle letter to immediately after the middle letter
+            //         allMidLet.push(middleLetter); // adding our current middle letter to the array of all middle letters
+            //     }
+            //     return allMidLet; // returning our array of middle letters
+            // }
+            // console.log(midEleLet(cartoons)); // logging to the console the invocation of our middle letter function. Invoked with our cartoons array.
 
 // Section 3:
 // Psudocode 
