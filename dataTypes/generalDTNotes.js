@@ -85,11 +85,11 @@
                         // var: var variables are hoisted, we can log variables declared with var prior to their declaration and we will recieve undefined as a result
                         // let: let variables are hoisted, although the variables are not immediately assigned any value and will give us an error
                         // functions: Functions are hoisted with full value to the beginning of a document
-                            let thing = 1;
-                            for(let i = 0; i < 10; i++){
-                                let thing = "Hello World"
-                            }
-                            console.log(i);
+                            // let thing = 1;
+                            // for(let i = 0; i < 10; i++){
+                            //     let thing = "Hello World"
+                            // }
+                            // console.log(i);
                     // Example:    
                         // not defined:
                             // console.log(test); // --> Error: not defined
@@ -609,3 +609,13 @@
                     //     return numberOfEs;
                     // }
                     // console.log(allVowels(sentence));
+    // Why is order important?       
+        // function movingArray(param){
+        //     param.splice( 5, 0, 'five');
+        //     param.push('six');
+        //     param.unshift('negOne');
+
+        //     return param;
+        // }
+
+        // console.log(movingArray([0,1,2,3,4]));

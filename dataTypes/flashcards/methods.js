@@ -47,7 +47,13 @@
         // Syntax: array.join('-')
 
     // splice
-        // Adds and Removes items to and from an array and returns the removed items.
+        // Adds and Removes items to an array and returns the removed items.
+            // example: 
+            let arr = ['One','Two','Three','Four']
+                // arr.splice(0,1,'negativeOne') // returns 'One'
+            console.log(arr.splice(0,1,'negativeOne'))
+                // BUT the array has been mutated into ['negativeOne','Two','Three','Four']
+                console.log(arr)
         // Data type it works on: Array
         // Syntax: array.splice(index, numberOfEleToDelete, newElements)
 
