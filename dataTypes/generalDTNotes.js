@@ -79,6 +79,9 @@
                 //     b = 15; // when declaring variables we want to initialize them with let or var (if they are going to change)
                 //     b = 20;
 
+                // Scope:
+                    // What is accessible within a specific function or block.
+                    // Scope determines where variables, functions, and objects are accessible in your code during runtime.
                 // Hoisting
                     // A mechanism where variables and function declarations are moved to the top of their scope before code execution.
                     // Specifics:

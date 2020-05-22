@@ -36,33 +36,33 @@
         // Data type it works on: Arrays
         // Syntax: array.shift()
 
-    // pop
-        // Removes the last item of an array.
-        // Data type it works on: Arrays
-        // Syntax: array.pop()
+// pop
+    // Removes the last item of an array.
+    // Data type it works on: Arrays
+    // Syntax: array.pop()
 
-    // join
-        // Used to join the elements of the array together into a string.
-        // Data type it works on: Arrays
-        // Syntax: array.join('-')
+// join
+   // Used to join the elements of the array together into a string.
+   // Data type it works on: Arrays
+   // Syntax: array.join('-')
 
-    // splice
-        // Adds and Removes items to an array and returns the removed items.
-            // example: 
-            let arr = ['One','Two','Three','Four']
-                // arr.splice(0,1,'negativeOne') // returns 'One'
-            console.log(arr.splice(0,1,'negativeOne'))
-                // BUT the array has been mutated into ['negativeOne','Two','Three','Four']
-                console.log(arr)
-        // Data type it works on: Array
-        // Syntax: array.splice(index, numberOfEleToDelete, newElements)
+// splice
+   // Adds and Removes items to an array and returns the removed items.
+        // example: 
+        // let arr = ['One','Two','Three','Four']
+        //     // arr.splice(0,1,'negativeOne') // returns 'One'
+        // console.log(arr.splice(0,1,'negativeOne'))
+        //     // BUT the array has been mutated into ['negativeOne','Two','Three','Four']
+        //     console.log(arr)
+    // Data type it works on: Array
+    // Syntax: array.splice(index, numberOfEleToDelete, newElements)
 
-    // toUpperCase
-        // Converts a string to uppercase letters.
-        // Data type it works on: Strings
-        // Syntax: string.toUpperCase()
+// toUpperCase
+    // Converts a string to uppercase letters.
+    // Data type it works on: Strings
+    // Syntax: string.toUpperCase()
 
-    // toLowerCase()
-        // Converts a string to lowercase letters.
-        // Data type it works on: Strings 
-        // Syntax: string.toLowerCase()
+// toLowerCase()
+    // Converts a string to lowercase letters.
+    // Data type it works on: Strings 
+    // Syntax: string.toLowerCase()

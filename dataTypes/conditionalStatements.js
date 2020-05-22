@@ -22,7 +22,7 @@
 //      - Abstractly Equal:
 //          - ==
 //      - Not Abstractly Equal:
-//      - !=
+//          - !=
 //  - A condition can include 'and' statements and 'or' statements
 //      - An 'and' statement is defined with two ampersand signs: &&
 //          - Example: if(x === true && y === true){then do this}
