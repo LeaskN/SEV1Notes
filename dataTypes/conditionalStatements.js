@@ -4,7 +4,7 @@
 //      - If something is false do something else 
 //      - Directly tied into booleans (true and false)
 
-// Potential Conditions Include
+// Potential Conditions Include (Comparison Operators)
 //  - Greater than: 
 //      - >
 //  - Less than::
@@ -23,6 +23,10 @@
 //          - ==
 //      - Not Abstractly Equal:
 //          - !=
+//  - logical and:
+//      - && 
+//  - logical or:
+//      - || 
 //  - A condition can include 'and' statements and 'or' statements
 //      - An 'and' statement is defined with two ampersand signs: &&
 //          - Example: if(x === true && y === true){then do this}

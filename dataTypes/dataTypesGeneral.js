@@ -116,7 +116,8 @@
     // Definition: a reusable block of code that performs a specific task 
 
 // for loops
-    // Definition: A loop iterates over items and executes code for each item.
+    // Definition: Repeatedly executes a block of code until a certain condition is met.
+        // (Old Definition: A loop iterates over items and executes code for each item.)
         // Important features: 
             // it has a starting point, max value, and incrimentation amount.
     // basic accumilator pattern

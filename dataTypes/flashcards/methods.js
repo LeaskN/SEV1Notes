@@ -27,17 +27,17 @@
         // Syntax: string.replace('oldSubStr', 'newSubStr')
 
 // unshift
-        // Adds new items to the beginning of an array
+        // Adds new elements to the beginning of an array
         // Data type it works on: Arrays
         // Syntax: array.unshift(newElement)
 
 // shift
-        // Removes the first item of an array
+        // Removes the first element of an array
         // Data type it works on: Arrays
         // Syntax: array.shift()
 
 // pop
-    // Removes the last item of an array.
+    // Removes the last element of an array.
     // Data type it works on: Arrays
     // Syntax: array.pop()
 
@@ -47,7 +47,7 @@
    // Syntax: array.join('-')
 
 // splice
-   // Adds and Removes items to an array and returns the removed items.
+   // Adds and Removes elements to an array and returns the removed elements.
         // example: 
         // let arr = ['One','Two','Three','Four']
         //     // arr.splice(0,1,'negativeOne') // returns 'One'
