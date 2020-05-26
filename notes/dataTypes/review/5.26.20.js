@@ -100,25 +100,25 @@
     // 'if' or 'if/else' statements.
     // Definition: Conditionals execute a statement if a specified condition is truthy. If the condition is falsy, another statement can be executed.
     // Syntax:
-        // if something is true, if its false do something else
+        // if something is true, do something. If that thing is false do something else.
         // Standard all-inclive syntax:
+        if ('something is true') {
+            // do something 
+        } else if ('something else is true') {
+            // do something else
+            // we can have an infinite amount of else if statements
+        } else {
+            // a catch all
+            // do this if everything else is false
+        }
+        // Syntax for no else-if statements
             if ('something is true') {
                 // do something 
-            } else if ('something else is true') {
-                // do something else
-                // we can have an infinite amount of else if statements
             } else {
                 // a catch all
                 // do this if everything else is false
             }
-        // No else-if syntax
-            if ('something is true') {
-                // do something 
-            } else {
-                // a catch all
-                // do this if everything else is false
-            }
-        // Just if syntax
+        // Syntax for no else-if statements just if statement
             if ('something is true') {
                 // do something 
             }
