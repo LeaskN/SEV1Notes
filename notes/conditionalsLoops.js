@@ -68,20 +68,20 @@
 
 let colors1 = ['red', 'blue', 'red', 'yellow', 'red'];
 let colors2 = ['red', 'blue', 'red', 'yellow', 'black'];
-    
-function redCounter(arr){
+
+function redCounter(arr, checker){
     let count = 0;
 
     for(let i = 0; i < arr.length; i++){
         let element = arr[i];
         // check if our current element is 'red'
-        if( element === 'red' ){
+        if( element === checker ){
             count = count + 1; // count += 1 // count++;
         }
     }
-    
+
     return count;
 }
 
-console.log(redCounter(colors1));
-console.log(redCounter(colors2));
+console.log(redCounter(colors1, 'red'));
+console.log(redCounter(colors2, 'red'));
