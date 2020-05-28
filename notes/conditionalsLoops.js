@@ -66,22 +66,84 @@
         // input:['red', 'blue', 'red', 'yellow', 'red']; output: 3;
         // input:['red', 'blue', 'red', 'yellow', 'black']; output: 2;
 
-let colors1 = ['red', 'blue', 'red', 'yellow', 'red'];
-let colors2 = ['red', 'blue', 'red', 'yellow', 'black'];
+// let colors1 = ['red', 'blue', 'red', 'yellow', 'red'];
+// let colors2 = ['red', 'blue', 'red', 'yellow', 'black'];
 
-function redCounter(arr, checker){
-    let count = 0;
+// function redCounter(arr, checker){
+//     let count = 0;
 
-    for(let i = 0; i < arr.length; i++){
-        let element = arr[i];
-        // check if our current element is 'red'
-        if( element === checker ){
-            count = count + 1; // count += 1 // count++;
-        }
-    }
+//     for(let i = 0; i < arr.length; i++){
+//         let element = arr[i];
+//         // check if our current element is 'red'
+//         if( element === checker ){
+//             count = count + 1; // count += 1 // count++;
+//         }
+//     }
 
-    return count;
-}
+//     return count;
+// }
 
-console.log(redCounter(colors1, 'red'));
-console.log(redCounter(colors2, 'red'));
+// console.log(redCounter(colors1, 'red'));
+// console.log(redCounter(colors2, 'red'));
+
+
+// Continue example
+// let person1 = {
+//     name: 'Geo'
+// }
+
+// let person2 = {
+//     name: 'Spencer'
+// }
+
+// let person3 = {
+
+// }
+
+// let people = [person1, person3, person2 ];
+// function counter(param){
+//     let acc = [];
+
+//     for(let i = 0; i < param.length;i++){
+//         let currentPerson = param[i];
+
+//         if(currentPerson.name === undefined){
+//             acc.push('Valued Customer'.toUpperCase());    
+//             continue;
+//         }    
+
+//         acc.push(currentPerson.name.toUpperCase());    
+//     }
+
+//     return acc;
+// }
+
+// console.log(counter(people));
+
+
+// Changing variables:
+    // Always use an identifier when creating new variables (let, var, or const)
+    // When changing variables dont use an identifier.
+    
+    // Example:
+        // let person1 = {
+        //     name: 'Geo'
+        // }
+
+        // if(1>0){
+        //     let n = 3;
+        // }
+        // let n = 4;
+
+        // console.log(n)
+
+        // person2 = {
+        //     name: 'Spencer'
+        // }
+
+        // person3 = {
+
+        // }
+
+        // console.log(person1);
+
