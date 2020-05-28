@@ -164,3 +164,23 @@
 // };
    
 // console.log(removeChar('eloquent'));
+
+
+// __________________________________________
+
+// get the index of specific letters from the following strings using .indexOf()
+
+// let str1 = 'jello';
+// let str2 = 'jake';
+let str3 = 'Hello';
+
+// console.log(str1.indexOf('x'));
+// console.log(str2.indexOf('x'));
+
+// console.log(str3.indexOf('j'));
+
+if('jello'.indexOf('j') > -1){
+    console.log('There is a j')
+} else {
+    console.log('there is not a j')
+}

@@ -1,4 +1,5 @@
 // Data Types
+    // Data Types specify what kind of data can be stored and manipulated within a program.
     // Primitive (immutable data types)
         // Numbers
             // Digits that JS can perfom mathematical operations on.
