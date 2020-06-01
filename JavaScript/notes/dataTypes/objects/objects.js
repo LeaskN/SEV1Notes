@@ -118,4 +118,22 @@
         employee.email = employee.email.slice(0, firstCut) + '@nebulaacademy.com';
     }
     // log the updated objects to the browser using the employees array
-    console.log(employees);
+    // console.log(employees);
+
+// Bracket Notation
+
+let obj = {
+    one: 'Ronald Vilorio',
+    two: 'Spencer Cannon',
+    three: 'Deboraht Neal',
+    four: 'Nat Martinez',
+};
+
+obj['one'];
+// obj['person1'] = 'Ronald Vilorio';
+// obj['person2'] = 'Spencer Cannon';
+// obj['person3'] = 'Deboraht Neal';
+// obj['person4'] = 'Nat Martinez';
+
+// console.log(obj);
+

@@ -40,7 +40,7 @@
 //             // Try and make it dynamic, swap out your name with other names and see what you get
 
 //         // Non-Dynamic solution (only works for 3-letter first names)
-//             var name = "Deboraht Neil";
+//             var name = "Deboraht Neal";
 //             var abbrev = name.slice(0, 5);
 //             console.log(abbrev);
 
@@ -112,8 +112,8 @@
 //     // Concatinate all elements in an array into one long string
 
 //     // Swap uppercase for lowercase 
-//         // Input: "Hi Neil!"
-//         // Output: "hI nEIL!"
+//         // Input: "Hi Neal!"
+//         // Output: "hI nEAL!"
 
 //     // Multiply all the numbers of an array together
 //         // input: arr = [ 0, 1, 2, 3, 4, 5]  

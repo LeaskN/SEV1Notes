@@ -12,7 +12,7 @@
         // looper(['test', 'anotherTest', 'a final test']);
         // Basic accumilator pattern
             // Given an array of names, return an array of initials
-        let fullNames1 = ['Ronald Vilorio', 'Spencer Cannon', 'Deboraht Neil', 'Nat Martinez']; // declare our array of names
+        let fullNames1 = ['Ronald Vilorio', 'Spencer Cannon', 'Deboraht Neal', 'Nat Martinez']; // declare our array of names
         let fullNames2 = ['Geo Francis', 'Kaya Chouprouta', 'Patrick Francois', 'Rosendo Pili']; 
         let fullNames3 = ['Solomon West', 'Nic Leask']; 
         let fullNames4 = ['Mike Lebowski', 'Boo Kid', 'Andy Davis']; 
