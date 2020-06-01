@@ -11,18 +11,31 @@
 // console.log(Math.abs(0));
 // console.log(12/'a');
 // console.log(['one', , 8, true][2])
-let string = "Hello World";
-let num1 = 4
-let num2 = 5;
+// let string = "Hello World";
+// let num1 = 4
+// let num2 = 5;
  
-function add(a, b){
-    console.log('test');
-    return a + b;
-}
+// function add(a, b){
+//     console.log('test');
+//     return a + b;
+// }
 
-console.log(add(num1, num2));
+// console.log(add(num1, num2));
 
 // The variables have incosistent capitalization. 
 
 // On lines 2 & 3 they are declared with lowercase 'n's.
 // On the final line they are invoked with capital 'N's.
+
+// if('good' === 'Good'.toLowerCase()){
+//     console.log(true)
+// }
+
+// indexOf
+let str = 'Hello World';
+console.log( str.indexOf('ll') > -1 ); // if a substring exists in a word
+
+// referencing specific elements or characters
+let arr = [1, 6, true, 'thing'];
+// console.log(arr[3]);
+

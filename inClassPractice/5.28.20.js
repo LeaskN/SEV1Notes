@@ -51,5 +51,3 @@
 // level 3:
     // Q3.1
         // Check an array of strings for the longest string 
-
-

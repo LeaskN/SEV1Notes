@@ -605,7 +605,7 @@
                 // console.log(stringFromArr4);
         
 
-// loops
+// 
     // Definition:
         // Repeatedly executes a block of code until a certain condition is met.
     // Syntax:

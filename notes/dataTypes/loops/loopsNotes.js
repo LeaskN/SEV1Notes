@@ -1,7 +1,7 @@
 //Loops: 
 //      - Loops are handy in scripting languages such as JavaScript 
         // Definition1: A loop iterates, or counts through, items and executes code for each item until a certain condition is met.
-        // Definition2: JavaScript loops are used to repeatedly run a block of code - until a certain condition is met.
+        // Best Definition: JavaScript loops are used to repeatedly run a block of code - until a certain condition is met.
 
 //  - Syntax:
 //      for(starting point; max value; increase value){
