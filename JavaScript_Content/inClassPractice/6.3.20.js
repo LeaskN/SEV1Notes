@@ -1,4 +1,4 @@
-// loops or conditionals (focus on picking ONE or the other)
+// loops or conditionals (level 0-2: focus on picking ONE or the other)
 
 // level 0
 // loop warmup
@@ -28,6 +28,18 @@
         // create a function which takes in two numbers
         // it returns 'That was divisible!' if the first number is divisble by the second
 
+    // Q2:
+        // create a function which takes in an array and a string
+        // it returns the index if the string exists within the array
+        // it returns 'not here' if the array doesn't contain the string
+
+// level 3:
+    // Q1:
+        // create a function which searches a string for any elements within an array
+        // the function returns an array of elements that do exist
+        // for example:
+            // input ['abc', 'def', 'llo', ' ', 'o'] & "Hello World" returns ['llo', ' ', 'o']
+
     // Q2: 
         // create a function which takes in two arrays
-        // the 
+        // the function will return a new array of any common elements
