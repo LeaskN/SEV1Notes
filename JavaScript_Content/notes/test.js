@@ -51,4 +51,4 @@ function speak(string){
     return string + 'World';
 }
 
-console.log(speak(dismiss))
+console.log(speak(dismiss));
