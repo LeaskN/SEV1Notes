@@ -166,21 +166,21 @@
         // create a function which takes in two arrays
         // the function will return a new array of any common elements
 
-        let arr1 = ['abc', 'def', 'llo', 'o', true, 3];
-        let arr2 = ['123', '789', 'llo', 'o', true, 3];
+        let arr1 = ['abc', 'def', 'llo', 'o', true, 3, '123', undefined, null, NaN];
+        // let arr2 = ['123', '789', 'llo', 'o', true, 3, undefined, NaN];
 
-        function simElement(param1, param2){
-            let cntr = [];
+        // function simElement(param1, param2){
+        //     let cntr = [];
 
-            for(let i = 0; i < param1.length; i++){
-                let element = param1[i];
+        //     for(let i = 0; i < param1.length; i++){
+        //         let element = param1[i];
 
-                if( param2.indexOf(element) > -1 ){
-                    cntr.push(param1[i]);
-                }
-            }
+        //         if( param2.indexOf(element) > -1 ){
+        //             cntr.push(param1[i]);
+        //         }
+        //     }
 
-            return cntr;
-        }
+        //     return cntr;
+        // }
 
-        console.log(simElement(arr1, arr2));
+        // console.log(simElement(arr1, arr2));

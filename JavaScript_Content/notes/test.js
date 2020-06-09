@@ -32,10 +32,23 @@
 // }
 
 // indexOf
-let str = 'Hello World';
-console.log( str.indexOf('ll') > -1 ); // if a substring exists in a word
+// let str = 'Hello World';
+// console.log( str.indexOf('ll') > -1 ); // if a substring exists in a word
 
 // referencing specific elements or characters
-let arr = [1, 6, true, 'thing'];
+// let arr = [1, 6, true, 'thing'];
 // console.log(arr[3]);
 
+
+// What does ['one', , 8, true][2] evaluate to be?
+console.log(['one', , 8, true][2]);
+
+// "Given the following what is the argument:
+let dismiss = "Goodbye";
+let greet = "Hello";
+ 
+function speak(string){
+    return string + 'World';
+}
+
+console.log(speak(dismiss))
