@@ -25,3 +25,17 @@
         // (Difficult) Make each one unique
 
 //______________________________________________________________________________________________________________
+
+// Object Loop practice
+// level 0:
+    // create an object (minimum 3 key-value pairs) & create a function which iterates over the object and logs all values to the console.
+
+// level 1: 
+    // create an object (minimum 3 key-value pairs) & create a function which iterates over the object and logs all the key & the value pairs to the console.
+
+// level 2: 
+    // create an object & create a function which logs all string key-value pairs to the console 
+
+    // create an object & create a function which logs all boolean key-value pairs to the console 
+
+    // create an object & create a function which logs all array key-value pairs to the console 
