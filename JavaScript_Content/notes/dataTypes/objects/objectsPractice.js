@@ -40,6 +40,7 @@
     // create an object & create a function which logs all boolean key-value pairs to the console 
 
     // create an object & create a function which logs all array key-value pairs to the console 
+    
 
 // level 3: 
     // given the following object create a function which logs the username & password length.
