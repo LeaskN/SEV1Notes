@@ -56,4 +56,4 @@
         }
 
 // level 4: 
-    // create an object & create a function which increases the factor of any number by 10
+    // create an object & create a function which increases the factor of any number by 10 (even if it is a string, or is concatinated with strings)
