@@ -8,46 +8,96 @@
        // You can reuse code by defining the code once, and using it many times.
        // This reduces potential errors 
        // Simplifies our programs
+    // Syntax:
 
-    //Basic Syntax
-        // function myFunction(){
-        //     console.log('Hello World!')
-        // };
-            // return ends the function and the function evaluates to what is being returned
-                // example:
-                // function sayHello(){
-                //     return 'Hello';
-                // }
-                    // DOESNT inherently write to the CLI, remember console.log does that
-
-                    // Invoking the function
-
-                        // Notes: 
-                            // Not all functions post to CLI, we may need to console.log
-                            // The parenthesis after the function are what makes it run
-                                // Without we will just get a reference 
-                            // sayHello() // This would invoke our function (still wont write to CLI)
-                            // console.log(sayHello()) // This DOES write to CLI
-                        // Example:
-                            // the following function will evaluate to the number 3
-                                // function returnNumber(){
-                                    // return 3;
-                                // }
-            // parameters
-                // A function can require parameters
-                    // the following function returns the first item in an array
-                        //                  ⬇️ Our parameter, we can have an infinite number of parameters
-                    // function pickFirst(array){
-                    //      return array[0];
+        //Basic Syntax or "Named function"
+            // function myFunction(){
+            //     console.log('Hello World!')
+            // };
+                // return ends the function and the function evaluates to what is being returned
+                    // example:
+                    // function sayHello(){
+                    //     return 'Hello';
                     // }
-                    // arguments
-                        // Arguments are the values assigned to paremters when the function is invoked
-                        // Invoke, assign arguments, and write to the CLI
-                        // console.log(pickFirst(['zero', 'one', 'two']))
+                        // DOESNT inherently write to the CLI, remember console.log does that
 
-        // note: there are many ways of invoking or creating a function
-            // We are just sticking to the basics for now!
+                        // Invoking the function
 
+                            // Notes: 
+                                // Not all functions post to CLI, we may need to console.log
+                                // The parenthesis after the function are what makes it run
+                                    // Without we will just get a reference 
+                                // sayHello() // This would invoke our function (still wont write to CLI)
+                                // console.log(sayHello()) // This DOES write to CLI
+                            // Example:
+                                // the following function will evaluate to the number 3
+                                    // function returnNumber(){
+                                        // return 3;
+                                    // }
+                // parameters
+                    // A function can require parameters
+                        // the following function returns the first item in an array
+                            //                  ⬇️ Our parameter, we can have an infinite number of parameters
+                        // function pickFirst(array){
+                        //      return array[0];
+                        // }
+                        // arguments
+                            // Arguments are the values assigned to paremters when the function is invoked
+                            // Invoke, assign arguments, and write to the CLI
+                            // console.log(pickFirst(['zero', 'one', 'two']))
+
+        // Anonymous function 
+        
+        // var pizza = function(thing, thing1, thing2){
+        //     return thing + thing1 + thing2
+        // };
+        
+        // console.log(pizza('Cheese', 'Tomato', 'Garlic'));
+
+        // Immediately invoked function:
+            // Syntax (may vary):
+            // (function() {console.log('this first func has run')}())
+            // // Examples:
+            // // Common example utilized with setTimeout:
+            //     setTimeout(function newFunc() {console.log('this second func has run')}, 3000);
+            // // Also using callbacks with setTimeout
+            //     function newFunc() {
+            //         console.log('this third func has run')
+            //     }
+            //     setTimeout( newFunc, 5000 );
+
+        // Arrow functions:
+            // Introduced in ES6
+                // this means that in modern code you'll see lots of arrow functions
+                // in legacy code you'll see named (or anonymous) functions 
+
+            let logger = () => console.log('Hello World from arrow function');
+            let loggerWP = (param1, param2) => {
+                console.log(`${param1} World from arrow ${param2}`);
+            }
+
+            logger();
+            loggerWP('Gmornin', 'fuNcTiOn');
+
+            // example: create a function that takes in an array and returns every other item
+
+            let arr1 = [ 'Red', 'Yellow', 'Blue', 'Aqua', 'Purple', 'Green' ];
+
+            let everyOther = (param) => {
+                let newArr = [];
+
+                for(let i = 0; i < param.length; i++){
+                    if( i % 2 === 0 ){
+                        newArr.push(param[i]);
+                    }
+                }
+
+                return newArr;
+            }
+            
+            console.log(everyOther(arr1));
+
+            let adder = (num1, num2) => num1 + num2;
 
     // Scope is:
         // What is accessible within a specific function
