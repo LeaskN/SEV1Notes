@@ -90,16 +90,23 @@
             let sentence = strings.reduce((newString, currentString) => newString + ' ' + currentString);
             console.log(sentence);
         // reduce an object to a single array (NOT COMMON & VERY COMPLEX)
+            // no example, just head to Google. 
+
+    // Break until 3:10
+    // 5 mins for 1st 2 
+    // 10 mins per q
 
     // practice
-        // Given an array of arrays reduce it to one array.
+        // Given an array of arrays reduce it to one array. 
+            // input: [[],[],[]]
+            // output:
         // Given an array of numbers reduce it to a total plus an additional 50. 
         // Given the following list of objects reduce all populations to one.
-            let countries = {
-                USA: 300000000,
-                UK: 66000000,
-                India:1300000000
-            }
+            let countries = [
+                {USA: 300000000},
+                {UK: 66000000},
+                {India:1300000000},
+            ]
         // Given an array of numbers, add all the even ones
         // Given an array of test scores(numbers), get the average score using reduce
 
