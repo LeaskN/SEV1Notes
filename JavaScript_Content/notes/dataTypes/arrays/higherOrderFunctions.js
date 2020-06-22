@@ -61,16 +61,49 @@
             let guests = [
                 {name: 'Vernon', age: 40},
                 {name: 'Petunia', age: 44},
+                {name: 'Hagrid', age: 21},
                 {name: 'Harry', age: 11},
                 {name: 'Dudley', age: 12}
-            ]
+            ];
 
-            // 2:07 to filter array 
-
-
-        
+            let over21 = guests.filter(ele => ele.age >= 21);
+            // console.log(over21);  
 
 // Reduce
+    // returns a single value
+    // for example you can:
+        // reduce an array of numbers to one number (the total)
+        // reduce multiple arrays into one array
+        // reduce multiple strings into one string
+
+    // examples:
+        // given an array of numbers reduce it to the total (COMMON)
+            let nums = [2,3,4,5];
+            let totalVal = nums.reduce((total, num) => total + num);
+            // console.log(totalVal);
+        // reduce multiple arrays into one array ("flatten them") (VERY COMMON)
+            let arrs = [['thing1', 'thing2', 'thing3'],[1,2,3],[true, false, true]];
+            let oneArr = arrs.reduce((newArr, arr) => newArr.concat(arr));
+            // console.log(oneArr);
+        // reduce multiple strings into one string (NOT COMMON PEOPLE USE JOIN INSTEAD)
+            let strings = ['Hello', 'this', 'should', 'be', 'a', 'sentence', '.']
+            let sentence = strings.reduce((newString, currentString) => newString + ' ' + currentString);
+            console.log(sentence);
+        // reduce an object to a single array (NOT COMMON & VERY COMPLEX)
+
+    // practice
+        // Given an array of arrays reduce it to one array.
+        // Given an array of numbers reduce it to a total plus an additional 50. 
+        // Given the following list of objects reduce all populations to one.
+            let countries = {
+                USA: 300000000,
+                UK: 66000000,
+                India:1300000000
+            }
+        // Given an array of numbers, add all the even ones
+        // Given an array of test scores(numbers), get the average score using reduce
+
+
 
 // Map
 
