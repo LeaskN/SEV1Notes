@@ -159,5 +159,5 @@ function factorOf10(param){
     
     return newNumbers;
 }
-
+// console.log(String('1234').padStart(9, "*"));
 console.log(factorOf10(numbers));
