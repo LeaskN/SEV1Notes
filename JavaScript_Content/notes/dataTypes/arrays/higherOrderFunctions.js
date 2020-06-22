@@ -56,13 +56,16 @@
 
                 // console.log(newArr2);
 
-            // Given the array on the following line. Filter all guests for only the ones over 21. 
+            // Given the array on the following line. 
+            // Filter all guests for only the ones over 21. 
             let guests = [
                 {name: 'Vernon', age: 40},
                 {name: 'Petunia', age: 44},
                 {name: 'Harry', age: 11},
                 {name: 'Dudley', age: 12}
             ]
+
+            // 2:07 to filter array 
 
 
         
