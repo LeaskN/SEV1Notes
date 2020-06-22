@@ -88,7 +88,7 @@
         // reduce multiple strings into one string (NOT COMMON PEOPLE USE JOIN INSTEAD)
             let strings = ['Hello', 'this', 'should', 'be', 'a', 'sentence', '.']
             let sentence = strings.reduce((newString, currentString) => newString + ' ' + currentString);
-            console.log(sentence);
+            // console.log(sentence);
         // reduce an object to a single array (NOT COMMON & VERY COMPLEX)
             // no example, just head to Google. 
 
@@ -98,15 +98,35 @@
 
     // practice
         // Given an array of arrays reduce it to one array. 
-            // input: [[],[],[]]
-            // output:
+            // input: [['item1', 'item2'],[true],[1]];
+            // output: ['item1', 'item2', true, 1];
+            let pracArr = [['item1', 'item2'],[true],[1]];
+            let flatPracArr = pracArr.reduce((newArr, currentEle) => newArr.concat(currentEle));
+            // console.log(pracArr[0]);
+            // console.log(flatPracArr[0]);
         // Given an array of numbers reduce it to a total plus an additional 50. 
+            let nums2 = [1, 2, 30, 5];
+            let totalVal2 = nums2.reduce((total, num) => total + num, 50);
+            console.log(totalVal2)
         // Given the following list of objects reduce all populations to one.
             let countries = [
                 {USA: 300000000},
                 {UK: 66000000},
-                {India:1300000000},
+                {India: 1300000000},
             ]
+            let oneObj = countries.reduce((acc, ele) => {return {...acc, ...ele}});
+            let totalPop = Object.values(oneObj).reduce((acc, val) => acc + val);
+
+        // Given the following list of objects reduce all populations to one.
+            // let countries = [
+            //     {name: 'USA', pop: 300000000},
+            //     {name: 'UK', pop: 66000000},
+            //     {name: 'India',pop: 1300000000},
+            // ]
+            // let totalPop = countries.reduce((total, ele) => total + ele.pop, 0);
+            console.log(totalPop);
+
+        // HOMEWORK:
         // Given an array of numbers, add all the even ones
         // Given an array of test scores(numbers), get the average score using reduce
 
