@@ -92,9 +92,6 @@
         // reduce an object to a single array (NOT COMMON & VERY COMPLEX)
             // no example, just head to Google. 
 
-    // Break until 3:10
-    // 5 mins for 1st 2 
-    // 10 mins per q
 
     // practice
         // Given an array of arrays reduce it to one array. 
@@ -107,7 +104,7 @@
         // Given an array of numbers reduce it to a total plus an additional 50. 
             let nums2 = [1, 2, 30, 5];
             let totalVal2 = nums2.reduce((total, num) => total + num, 50);
-            console.log(totalVal2)
+            // console.log(totalVal2)
         // Given the following list of objects reduce all populations to one.
             let countries = [
                 {USA: 300000000},
@@ -124,12 +121,79 @@
             //     {name: 'India',pop: 1300000000},
             // ]
             // let totalPop = countries.reduce((total, ele) => total + ele.pop, 0);
-            console.log(totalPop);
-
-        // HOMEWORK:
-        // Given an array of numbers, add all the even ones
-        // Given an array of test scores(numbers), get the average score using reduce
-
-// Map
+            // console.log(totalPop);
 
 // Sort
+    // returns the original array but sorted 
+
+    // Examples:
+        // sort an array of strings alphabetically
+            let arrOfStr = ['dog', 'doe', 'cat', 'bat', 'rat'];
+            // console.log(arrOfStr.sort());
+
+        // sort an array of numbers by first digit, then second, etc...
+            let arrOfNums = [0, 99, 1, 34, -144, -51, -13, 0, 1, 4,12312, 51212, -1424211];
+            let sortedNums = () => arrOfNums.sort();
+            // console.time('sortedNums');
+            // console.log(sortedNums(arrOfNums));
+            // console.timeEnd('sortedNums');
+
+        // sort an array of numbers by ACTUAL size (this is what we generally expect as humans)
+            let arrOfNums2 = [0, 99, 123, 51, 2, 3, -1, 01, 3, -3, -3000, -1000];
+            // console.log(arrOfNums2.sort((a, b) => a - b)); // (Potentially super inefficient)
+
+        // sort an array of objects (based on numeric Key-Value pairs)
+            let arrOfObjs = [
+                {name: 'Mike', age: 39},
+                {name: 'Sammi', age: 16},
+                {name: 'Shawn', age: 15},
+                {name: 'Sharice', age: 20},
+            ];
+
+            // console.log(arrOfObjs.sort((person1, person2) => person1.age - person2.age))
+            
+        // sort an array of objects (based on non-numeric Key-Value pairs)
+            // very complex, look-up if needed
+
+// Map
+    // returns a new array populated with the function results
+    
+    // examples: (Impossible to cover them all as there are so many possible scenareos)
+        // Duplicated all numeric values in an array
+            let doubled = [2,4,6,8].map(n => n * 2);
+            console.log(doubled);
+
+        // Remove last letter of all string in an array
+            let strings4 = ['Hello', 'Goodbye', 'Goodmorning'];
+            let shortStrings = strings4.map(str => str.slice(0, -1))
+            console.log(shortStrings);
+
+        // Reverse all strings in an array
+            let strings5 = ['Hello', 'Goodbye', 'Goodmorning'];
+            let reversedStrings = strings5.map(str => str.split('').reverse().join(''));
+            console.log(reversedStrings);
+            // before we had .map() this would look like:
+                let reversedStringsOld = (param) => {
+                    let acc = [];
+
+                    for(let i = 0; i < param.length; i++){
+                        acc.push(param[i].split('').reverse().join(''));
+                    }
+                    return acc;
+                }
+                console.log(reversedStringsOld(strings5));
+            
+        // More complex syntatically
+            // add one to every other element
+            let numbers = [-1, 4, 7, 0, -3, 6];
+            let newNumbers = numbers.map((num, index) => {
+                if(index % 2){
+                    return num + 1
+                } else {
+                    return num + 0;
+                }    
+            })
+            
+            console.log(newNumbers);
+        
+
