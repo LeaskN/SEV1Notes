@@ -130,9 +130,6 @@
         // Given an array of numbers, add all the even ones
         // Given an array of test scores(numbers), get the average score using reduce
 
-
-
 // Map
 
 // Sort
-
