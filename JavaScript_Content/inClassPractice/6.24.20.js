@@ -13,9 +13,11 @@
     // grab the last letter of an array of arrays
 
 // level 3: using .map() do the following
-    // create a new array of fullNames from an array of objects where ONE object looks similar to this:{first: 'Nic', last: 'Leask'}
-    // Input: [{first: 'Ro', last: 'Pili'}, {first: 'Nic', last: 'Leask'}]
-    // Output: ['Ro Pili', 'Nic Leask']
+    // create a new array of fullNames from an array of objects where ONE object looks similar to this:{first: 'Nic', last: 'Leask'};
+    // Input: [{first: 'Ro', last: 'Pili'}, {first: 'Nic', last: 'Leask'}];
+    // Output: ['Ro Pili', 'Nic Leask'];
 
 // level 4: using .map() do the following
-    // 
+    // create a new array of objects from an array of objects where ONE object looks similar to this:{first: 'Nic', last: 'Leask'};
+    // Input:  [{first: 'Ro', last: 'Pili'}, {first: 'Nic', last: 'Leask'}];
+    // Output: [{first: 'Ro', last: 'Pili', fullName: 'Ro Pili', initials: 'RP'}, {first: 'Nic', last: 'Leask', fullName: 'Nic Leask', initials: 'NL'}];
