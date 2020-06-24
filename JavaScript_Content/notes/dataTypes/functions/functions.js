@@ -45,6 +45,14 @@
                             // Arguments are the values assigned to paremters when the function is invoked
                             // Invoke, assign arguments, and write to the CLI
                             // console.log(pickFirst(['zero', 'one', 'two']))
+                    //Default params:
+                        // The following function can be invoked with or without params. 
+                        // Input: 'Hello World', Output: 'Hello World'
+                        // No Input:           , Output: 'Default'
+
+                        // function(param = 'Default'){
+                            //     return param
+                        // }
 
         // Anonymous function 
         
