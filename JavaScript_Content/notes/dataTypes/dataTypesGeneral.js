@@ -119,7 +119,7 @@
     // Definition: Repeatedly executes a block of code until a certain condition is met.
         // (Old Definition: A loop iterates over items and executes code for each item.)
         // Important features: 
-            // it has a starting point, max value, and incrimentation amount.
+            // it has a starting point, max value, and incrementation amount.
     // basic accumilator pattern
         // when a loop is adding value to an existing variable 
             // This can be an array, string, number, object, etc..
