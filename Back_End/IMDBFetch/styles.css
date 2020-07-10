@@ -1,0 +1,44 @@
+body{
+    background-size: cover;
+    background-image: url(https://dkr0pu7ej5xex.cloudfront.net/wp-content/uploads/2017/04/24135159/Netflix-Background.jpg);
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+img{
+    width: 200px;
+}
+input{
+    height: 20px;
+}
+.container{
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.card{
+    font-family: Cambria, sans-serif;
+    background-color: #333333;
+    border-radius: 10px;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    width: 300px;
+    height: 500px;
+    margin: 10px;
+}
+.card:hover{
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8)
+}
+.row{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+.col{
+    padding-bottom: 10px;
+}
