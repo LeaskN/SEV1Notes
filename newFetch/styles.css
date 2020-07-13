@@ -1,0 +1,23 @@
+.card{
+    border: 1px solid grey;
+    border-radius: 3px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.img{
+   width:100%; 
+}
+
+.cardTop{
+    height: 50px;
+}
+
+.commentArea{
+    height: 200px;
+}
