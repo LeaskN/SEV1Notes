@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=stylesheet href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="buttons">
+        <form onsubmit='addPerson(event)'>
+            <input class="firstNameCreate" type='text' placeholder="First Name">
+            <input class="lastNameCreate" type='text' placeholder="Last Name">
+            <button class="create" type="submit">Create</button>
+        </form>
+        <form>
+            <input class="idUpdate" placeholder="User ID">
+            <input class="firstNameUpdate" placeholder="First Name">
+            <input class="lastNameUpdate" placeholder="Last Name">
+            <button class="update">Update</button>
+        </form>
+        <form>
+            <input class="deleteId" placeholder="User ID">
+            <button class="delete">Delete</button>
+        </form>
+    </div>
+    <div class='container'></div>
+    <script src="scripts.js"></script>
+</body>
+</html>
